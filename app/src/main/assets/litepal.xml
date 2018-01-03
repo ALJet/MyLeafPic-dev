@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="folders.db" ></dbname>
+
+    <version value="12" ></version>
+
+    <list>
+        <mapping class="indi.aljet.myleafpic_dev.sql.model.Folders" />
+    </list>
+</litepal>

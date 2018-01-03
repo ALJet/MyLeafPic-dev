@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:id="@+id/text_dialog_rl"
+    android:paddingStart="@dimen/medium_spacing"
+    android:paddingEnd="@dimen/medium_spacing">
+
+    <horaapps.org.liz.ui.ThemedTextView
+        android:id="@+id/folder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/small_spacing"
+        android:text="Camera"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:textSize="@dimen/medium_text"/>
+
+    <horaapps.org.liz.ui.ThemedTextView
+        android:id="@+id/file_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/folder_name"
+        android:layout_alignParentEnd="true"
+        android:text="1/80"
+        android:maxLines="1"
+        android:textSize="@dimen/medium_text"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

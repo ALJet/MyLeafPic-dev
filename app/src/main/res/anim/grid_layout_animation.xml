@@ -1,0 +1,7 @@
+
+<gridLayoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:columnDelay="15%"
+    android:rowDelay="15%"
+    android:direction="top_to_bottom">
+
+</gridLayoutAnimation>

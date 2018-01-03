@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="indi.aljet.myleafpic_dev.activitys.MainActivity">
+    <!--tools:openDrawer="start"-->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include android:id="@+id/toolbar"
+                     layout="@layout/toolbar" />
+
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+            <include layout="@layout/there_is_nothing_to_show" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_layout_margin"
+            app:elevation="@dimen/fab_elevation"
+            app:borderWidth="@dimen/fab_border_width"
+            app:pressedTranslationZ="@dimen/fab_pressed_translationZ"
+            android:layout_gravity="bottom|end"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_behavior="indi.aljet.myleafpic_dev.views.FabScrollBehaviour"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include android:id="@+id/drawer_items"
+             layout="@layout/drawer" />
+
+
+</android.support.v4.widget.DrawerLayout>
